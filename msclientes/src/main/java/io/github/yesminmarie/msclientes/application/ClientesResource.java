@@ -1,8 +1,8 @@
 package io.github.yesminmarie.msclientes.application;
 
 import io.github.yesminmarie.msclientes.application.representation.ClienteSaveRequest;
-import io.github.yesminmarie.msclientes.domain.Cliente;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -12,12 +12,14 @@ import java.net.URI;
 @RestController
 @RequestMapping("clientes")
 @RequiredArgsConstructor
-public class ClienteResource {
+@Slf4j
+public class ClientesResource {
 
     private final ClienteService service;
 
     @GetMapping
     public String status(){
+        log.info("Obtendo o status do microservice de clientes");
         return "ok";
     }
 
