@@ -1,6 +1,6 @@
 package io.github.yesminmarie.mscartoes.application.representation;
 
-import io.github.yesminmarie.mscartoes.domain.BandeiraCartao;
+import io.github.yesminmarie.mscartoes.domain.enums.BandeiraCartao;
 import io.github.yesminmarie.mscartoes.domain.Cartao;
 import lombok.Data;
 

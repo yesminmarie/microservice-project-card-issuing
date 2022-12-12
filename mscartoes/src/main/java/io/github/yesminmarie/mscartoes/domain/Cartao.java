@@ -1,5 +1,6 @@
 package io.github.yesminmarie.mscartoes.domain;
 
+import io.github.yesminmarie.mscartoes.domain.enums.BandeiraCartao;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
